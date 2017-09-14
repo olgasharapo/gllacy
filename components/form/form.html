@@ -1,0 +1,75 @@
+<form class="form" action="#" method="post">
+  <fieldset class="form-group">
+    <div class="form-group-title">Сортировка:</div>
+    <div class="form-group-content">
+      <select class="field-select" name="sorting">
+        <option class="field-select-text" value="popular">по популярности</option>
+        <option class="field-select-text" value="inexpensive">сначала не дорогие</option>
+        <option class="field-select-text" value="expensive">сначала дорогие</option>
+        <option class="field-select-text" value="fat">по жирности</option>
+      </select>
+    </div>
+  </fieldset>
+  <fieldset class="form-group">
+    <div class="form-group-title">Цена:
+      <span class="price-controls min">100 руб.-</span>
+      <span class="price-controls max">500 руб.</span>
+    </div>
+    <div class="form-group-content">
+      <div class="field-range-controls">
+        <div class="range-controls-scale">
+          <div class="range-controls-bar"></div>
+        </div>
+        <div class="range-controls-toggle toggle-min"></div>
+        <div class="range-controls-toggle toggle-max"></div>
+      </div>
+    </div>
+  </fieldset>
+  <fieldset class="form-group">
+    <div class="form-group-title">Жирность:</div>
+    <div class="form-group-content">
+      <label class="field-radio-item">
+        <input class="field-radio-input" type="radio" value="0" name="fat">
+        <span class="field-radio-text">0%</span>
+      </label>
+      <label class="field-radio-item">
+        <input class="field-radio-input" type="radio" value="10" name="fat" checked>
+        <span class="field-radio-text">до 10%</span>
+      </label>
+      <label class="field-radio-item">
+        <input class="field-radio-input" type="radio" value="30" name="fat">
+        <span class="field-radio-text">до 30%</span>
+      </label>
+      <label class="field-radio-item">
+        <input class="field-radio-input" type="radio" value="35" name="fat">
+        <span class="field-radio-text">выше 30%</span>
+      </label>
+    </div>
+  </fieldset>
+  <fieldset class="form-group">
+    <div class="form-group-title">Наполнители:</div>
+    <div class="form-group-content">
+      <label class="field-checkbox-item">
+        <input class="field-checkbox-input" type="checkbox" value="chocolate" checked>
+        <span class="field-checkbox-text">шоколадные</span>
+      </label>
+      <label class="field-checkbox-item">
+        <input class="field-checkbox-input" type="checkbox" value="sugar" checked>
+        <span class="field-checkbox-text">сахарные присыпки</span>
+      </label>
+      <label class="field-checkbox-item">
+        <input class="field-checkbox-input" type="checkbox" value="fruit">
+        <span class="field-checkbox-text">фрукты</span>
+      </label>
+      <label class="field-checkbox-item">
+        <input class="field-checkbox-input" type="checkbox" value="syrip">
+        <span class="field-checkbox-text">сиропы</span>
+      </label>
+      <label class="field-checkbox-item">
+        <input class="field-checkbox-input" type="checkbox" value="jam">
+        <span class="field-checkbox-text">джемы</span>
+      </label>
+    </div>
+  </fieldset>
+  <button class="btn field-action" type="submit" name="button">Применить</button>
+</form>

@@ -1,0 +1,72 @@
+@font-face {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/web/roboto.woff2"), url("../fonts/web/roboto.woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/web/robotomedium.woff2"), url("../fonts/web/robotomedium.woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/web/robotobold.woff2"), url("../fonts/web/robotobold.woff");
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 900px;
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+  padding-left: 20px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #ffffff;
+  background-color: #849d8f;
+}
+
+h1  {
+  margin: 0;
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+}
+
+h2 {
+  margin: 0;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 700;
+}
+
+p {
+  margin: 0;
+  color: #323232;
+}
+
+a {
+  text-decoration: none;
+}
+
+@keyframes emergence {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

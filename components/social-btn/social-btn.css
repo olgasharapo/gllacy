@@ -1,0 +1,48 @@
+.social-btn {
+  position: relative;
+  display: block;
+  width: 36px;
+  height: 36px;
+  border: 2px solid #c2cec7;
+  font-size: 0;
+  border-radius: 50%;
+}
+
+.social-btn::after {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  background: url("../img/sprite.png") no-repeat;
+  opacity: 0.8;
+}
+
+.social-btn-tw::after {
+  background-position: -10px -477px;
+}
+
+.social-btn-inst::after {
+  background-position: -10px -435px;
+}
+
+.social-btn-fb::after {
+  background-position: -10px -393px;
+}
+
+.social-btn-vk::after {
+  background-position: -10px -519px;
+}
+
+.social-btn:hover::after {
+  opacity: 1;
+  transition-duration: 0.2s;
+}
+
+.social-btn:active::after {
+  opacity: 0.9;
+  box-shadow: inset 0 2px 1px rgb(136, 136, 136);
+  transition-duration: 0.2s;
+}

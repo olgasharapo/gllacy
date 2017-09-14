@@ -1,0 +1,78 @@
+.catalog-item {
+  position: relative;
+  width: 200px;
+  min-height: 296px;
+  z-index: 1;
+}
+
+.catalog-item-content {
+  position: relative;
+  z-index: 3;
+}
+
+.catalog-item-img {
+  display: block;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.catalog-item-price {
+  position: absolute;
+  top: 140px;
+  left: 0;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+  white-space: pre;
+}
+
+.catalog-item-price::before {
+  position: absolute;
+  content: "";
+  top: 8px;
+  left: 80px;
+  width: 30px;
+  height: 35px;
+  background: url("../img/sprite.png") no-repeat -10px -561px;
+}
+
+.catalog-item-price-kg {
+  font-size: 30px;
+}
+
+.catalog-item-text {
+  text-decoration: underline;
+  color: #ffffff;
+  font-weight: 500;
+  text-align: center;
+}
+
+.catalog-item-appearing {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 220px;
+  min-height: 380px;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 20px 20px rgba(91, 91, 91, 0.4);
+  border-radius: 10px;
+  z-index: 2;
+  display: none;
+}
+
+.catalog-item-appearing .btn {
+  padding: 13px 15px;
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+}
+
+.catalog-item:hover .catalog-item-appearing {
+  display: block;
+  animation-name: emergence;
+  animation-duration: 0.5s;
+}
+
+.catalog-item:hover {
+  z-index: 2;
+}

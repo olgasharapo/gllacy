@@ -1,0 +1,49 @@
+  <ul class="user-block">
+    <li class="user-block-item login">
+      <a class="user-block-link login" href="#">Вход</a>
+      <div class="user-block-login">
+        <form class="login-form" action="index.html" method="post">
+          <label class="field-text-item">
+            <input class="field-text-input"  type="email" name="email" placeholder="Электронная почта">
+          </label>
+          <label class="field-text-item">
+            <input class="field-text-input" type="password" name="password" placeholder="Пароль">
+          </label>
+          <button class="btn" type="submit" name="login">Войти</button>
+        </form>
+        <div class="login-help">
+          <a class="login-help-link" href="#">Забыли пароль?</a>
+          <a class="login-help-link" href="#">Новая регистрация</a>
+        </div>
+      </div>
+    </li>
+    <li class="user-block-item basket">
+      <a class="user-block-link basket" href="#">
+      <span class="user-block-text">Пусто</span>
+      </a>
+      <div class="user-block-basket">
+        <table class="basket-products">
+          <tr class="basket-product-field">
+            <td class="basket-delete">
+              <button class="basket-btn-delete" type="button" title="Удалить">Удалить</button>
+            </td>
+            <td class="basket-product-text cell-2">Пломбир с апельсиновым джемом</td>
+            <td class="basket-product-text">1.5кг х <span class="grey">200р.</span></td>
+            <td class="basket-product-text">300р.</td>
+          </tr>
+          <tr class="basket-product-field">
+            <td class="basket-delete">
+              <button class="basket-btn-delete" type="button" title="Удалить">Удалить</button>
+            </td>
+            <td class="basket-product-text cell-2">Клубничный пломбир с присыпкой из белого шоколада</td>
+            <td class="basket-product-text">1.5кг х <span class="grey">300р.</span></td>
+            <td class="basket-product-text">450р.</td>
+          </tr>
+        </table>
+        <div class="basket-final">
+          <p class="basket-final-total">Итого: <span class="price">750р.</span></p>
+        </div>
+        <button class="btn" type="submit" name="button">Оформить заказ</button>
+      </div>
+    </li>
+  </ul>

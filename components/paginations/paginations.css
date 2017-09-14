@@ -1,0 +1,79 @@
+.paginations {
+  display: flex;
+  justify-content: space-between;
+  width: 190px;
+}
+
+.pagination-link {
+  min-width: 26px;
+  height: 26px;
+  line-height: 26px;
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0);
+  transition-duration: 0.2s;
+}
+
+.pagination-link.active {
+  color: #323232;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.pagination-link:not(.active):hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.pagination-link:not(.active):active {
+  color: #323232;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.pagination-prev,
+.pagination-next {
+  position: relative;
+  width: 9px;
+  height: 8px;
+  background-color: transparent;
+  text-indent: -2000px;
+  align-self: center;
+}
+
+.pagination-prev::before,
+.pagination-prev::after,
+.pagination-next::before,
+.pagination-next::after {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.pagination-prev::before,
+.pagination-next::before {
+  top: 0;
+  left: 0;
+}
+
+.pagination-prev::after,
+.pagination-next::after {
+  bottom: 0;
+  left: 0;
+}
+
+.pagination-prev::before,
+.pagination-next::after {
+  transform: rotate(-45deg);
+}
+
+.pagination-prev::after,
+.pagination-next::before {
+  transform: rotate(45deg);
+}
+
+.pagination-prev.disabled {
+  opacity: 0.2;
+  cursor: default;
+}

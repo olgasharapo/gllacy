@@ -1,0 +1,125 @@
+.main-navigation {
+  width: 400px;
+}
+
+.main-navigation-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.main-navigation-item::after {
+  display: block;
+  content: "";
+  height: 10px;
+}
+
+.main-navigation-item:first-child {
+  position: relative;
+}
+
+.main-navigation-link {
+  display: block;
+  padding: 8px 15px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: underline;
+  border-radius: 30px;
+  transition-duration: 0.2s;
+}
+
+.main-navigation-link.active {
+  background-color: #d07058;
+  text-decoration: none;
+  cursor: default;
+}
+
+.main-navigation-item:hover .main-navigation-link:not(.active) {
+  color: #333333;
+  background-color: #f7f6f3;
+  text-decoration: none;
+}
+
+.main-navigation-item:first-child:hover .main-navigation-submenu {
+  display: block;
+  animation-name: emergence;
+  animation-duration: 0.5s;
+}
+
+.main-navigation-link:not(.active):active {
+  background-color: #ededed;
+  box-shadow: inset 0 2px 1px rgb(105, 105, 105);
+}
+
+.main-navigation-submenu {
+  position: absolute;
+  top: 40px;
+  left: -8px;
+  width: 143px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+  background-color: #f8f7f4;
+  box-shadow: 0 20px 20px rgba(91, 91, 91, 0.4);
+  border-radius: 10px;
+}
+
+.submenu-link {
+  display: block;
+  padding: 6px 20px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #323232;
+  transition-duration: 0.2s;
+}
+
+.submenu-link.active {
+  background-color: #d07058;
+  cursor: default;
+}
+
+.submenu-item:last-child .submenu-link {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.submenu-text {
+  display: block;
+  position: relative;
+  color: #323232;
+  padding: 6px 20px;
+  font-weight: 700;
+}
+
+.submenu-text::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 128px;
+  height: 2px;
+  background-color: #d1d0ce;
+}
+
+.submenu-link:not(.active):hover {
+  background-color: #fbded7;
+}
+
+.submenu-link:not(.active):active {
+  background-color: #f6b5a5;
+}
+
+@keyframes emergence {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

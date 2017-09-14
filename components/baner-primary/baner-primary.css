@@ -1,0 +1,33 @@
+.baner-primary {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  width: 420px;
+  height: 229px;
+  border-radius: 15px;
+}
+
+.baner-primary:first-child {
+  background: url("../img/raspberries.jpg") no-repeat;
+}
+
+.baner-primary:last-child {
+  background: url("../img/chocolate.jpg") no-repeat;
+}
+
+.baner-primary-title {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+}
+
+.baner-primary-text {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.baner-primary-btn {
+  align-self: flex-end;
+}

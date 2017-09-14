@@ -1,0 +1,36 @@
+.breadcrumbs {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumbs-item {
+  position: relative;
+  padding-right: 20px;
+}
+
+.breadcrumbs-item::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  right: 5px;
+  width: 8px;
+  height: 12px;
+  background: url("../img/icon-right-small.png")
+}
+
+.breadcrumbs-item:last-child::after {
+  display: none;
+}
+
+.breadcrumbs-link {
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.breadcrumbs-item:last-child .breadcrumbs-link {
+  text-decoration: none;
+}
