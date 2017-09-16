@@ -16,17 +16,13 @@
   margin-bottom: 15px;
 }
 
-.catalog-item-price {
+.catalog-item-price-weight {
   position: absolute;
   top: 140px;
   left: 0;
-  font-size: 45px;
-  line-height: 45px;
-  font-weight: 700;
-  white-space: pre;
 }
 
-.catalog-item-price::before {
+.catalog-item-price-weight::before {
   position: absolute;
   content: "";
   top: 8px;
@@ -36,7 +32,15 @@
   background: url("../img/sprite.png") no-repeat -10px -561px;
 }
 
-.catalog-item-price-kg {
+.catalog-item-price {
+  display: inline-block;
+  padding-right: 25px;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+}
+
+.catalog-item-weight {
   font-size: 30px;
 }
 
@@ -50,9 +54,9 @@
 .catalog-item-appearing {
   position: absolute;
   top: -10px;
+  bottom: -70px;
   left: -10px;
   width: 220px;
-  min-height: 380px;
   background-color: rgba(255, 255, 255, 0.2);
   box-shadow: 0 20px 20px rgba(91, 91, 91, 0.4);
   border-radius: 10px;

@@ -1,0 +1,35 @@
+.field-radio-input {
+  display: none;
+}
+
+.field-radio-input + .field-radio-text {
+  position: relative;
+  display: inline-block;
+  padding-left: 25px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.field-radio-input + .field-radio-text::before {
+  position: absolute;
+  content: "";
+  top: -3px;
+  left: 0;
+  width: 22px;
+  height: 26px;
+  background: url("../img/sprite.png") no-repeat -10px -633px;
+  opacity: 0.8;
+}
+
+.field-radio-input:checked + .field-radio-text::before {
+  top: 0;
+  background-position: -10px -668px;
+}
+
+.field-radio-text:hover::before {
+  opacity: 1;
+}
+
+.field-radio-input:disabled + .field-radio-text {
+  opacity: 0.4;
+}

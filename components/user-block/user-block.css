@@ -28,7 +28,7 @@
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 30px;
-  transition-duration: 0.2s;
+  transition: all 0.2s ease;
 }
 
 .user-block-link.login {
@@ -153,7 +153,7 @@
   box-shadow: 0 20px 20px rgba(91, 91, 91, 0.4);
 }
 
-.basket-products {
+.user-block-basket-products {
   width: 100%;
   font-size: 13px;
   line-height: 16px;
@@ -163,23 +163,23 @@
   text-align: left;
 }
 
-.basket-product-text {
+.user-block-basket-product-text {
   padding-top: 10px;
   padding-left: 30px;
   padding-bottom: 17px;
 }
 
-.basket-product-text .grey {
+.user-block-basket-product-text .grey {
   color: #999999;
 }
 
-.basket-product-text.cell-2 {
+.user-block-basket-product-text.cell-2 {
   padding-left: 50px;
   position: relative;
   width: 290px;
 }
 
-.basket-product-text.cell-2::before {
+.user-block-basket-product-text.cell-2::before {
   position: absolute;
   content: "";
   top: 0;
@@ -190,19 +190,19 @@
   border-radius: 50%;
 }
 
-.basket-product-field:first-child .basket-product-text.cell-2::before {
+.user-block-basket-product-field:first-child .user-block-basket-product-text.cell-2::before {
   background-position: -10px -307px;
 }
 
-.basket-product-field:last-child .basket-product-text.cell-2::before {
+.user-block-basket-product-field:last-child .user-block-basket-product-text.cell-2::before {
   background-position: -10px -350px;
 }
 
-.basket-delete {
+.user-block-basket-delete {
   vertical-align: top;
 }
 
-.basket-btn-delete {
+.user-block-basket-btn-delete {
   position: relative;
   font-size: 0;
   border: 0;
@@ -213,8 +213,8 @@
   cursor: pointer;
 }
 
-.basket-btn-delete::before,
-.basket-btn-delete::after {
+.user-block-basket-btn-delete::before,
+.user-block-basket-btn-delete::after {
   position: absolute;
   content: "";
   top: 6;
@@ -224,15 +224,15 @@
   background-color: #323232;
 }
 
-.basket-btn-delete::before {
+.user-block-basket-btn-delete::before {
   transform: rotate(45deg);
 }
 
-.basket-btn-delete::after {
+.user-block-basket-btn-delete::after {
   transform: rotate(-45deg);
 }
 
-.basket-final-total {
+.user-block-basket-final-total {
   margin: 0;
   margin-bottom: 15px;
   font-size: 15px;

@@ -54,7 +54,44 @@
   font-size: 14px;
 }
 
-.range-controls-scale {
+.field-range-controls-price-item {
+  position: relative;
+  margin-right: 12px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.field-range-controls-price-item:first-child::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: -8px;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.field-range-controls-price-input {
+  width: 30px;
+  color: #ffffff;
+  border: 0;
+  background-color: transparent;
+}
+
+.field-range-controls-price-input:focus {
+  outline: 0
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.field-range-controls-scale {
   position: relative;
   width: 180px;
   height: 4px;
@@ -62,7 +99,7 @@
   background-color: #d1dad3;
 }
 
-.range-controls-bar {
+.field-range-controls-bar {
   position: absolute;
   top: 0;
   left: 25px;
@@ -71,7 +108,7 @@
   background-color: #ffffff;
 }
 
-.range-controls-toggle {
+.field-range-controls-toggle {
   position: absolute;
   top: 8px;
   left: 0;
@@ -84,15 +121,15 @@
   transition-duration: 0.2s;
 }
 
-.range-controls-toggle:hover {
+.field-range-controls-toggle:hover {
   transform: scale(1.1);
 }
 
-.toggle-min {
+.field-range-controls-toggle.toggle-min {
   left: 35px;
 }
 
-.toggle-max {
+.field-range-controls-toggle.toggle-max {
   left: 100px;
 }
 
@@ -154,7 +191,7 @@
   opacity: 0.4;
 }
 
-.btn.field-action {
+.field-action {
   padding: 0 25px;
   font-weight: 500;
   color: #ffffff;
@@ -168,13 +205,16 @@
   align-self: flex-end;
 }
 
-.btn.field-action:hover {
+.field-action:hover {
   color: #323232;
+  background-image: none;
   background-color: #ffffff;
+  box-shadow: none;
 }
 
-.btn.field-action:active {
+.field-action:active {
   color: #323232;
+  background-image: none;
   background-color: #eaeaea;
   box-shadow: inset 0 2px 1px #696969;
 }

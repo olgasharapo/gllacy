@@ -8,11 +8,11 @@
   border-radius: 15px;
 }
 
-.baner-primary:first-child {
+.baner-primary.crimson {
   background: url("../img/raspberries.jpg") no-repeat;
 }
 
-.baner-primary:last-child {
+.baner-primary.chocolate {
   background: url("../img/chocolate.jpg") no-repeat;
 }
 

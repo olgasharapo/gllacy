@@ -13,7 +13,7 @@
   color: #ffffff;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0);
-  transition-duration: 0.2s;
+  transition: all 0.2s ease;
 }
 
 .pagination-link.active {
@@ -35,8 +35,8 @@
   position: relative;
   width: 9px;
   height: 8px;
-  background-color: transparent;
   text-indent: -2000px;
+  background-color: transparent;
   align-self: center;
 }
 

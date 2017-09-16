@@ -21,3 +21,4 @@
 .search-1 { background-position: -44px -606px; width: 17px; height: 17px; }
 .search { background-position: -44px -633px; width: 17px; height: 17px; }
 .heart { background-position: -42px -660px; width: 15px; height: 13px; }
+.icon-right-small { background-position: -53px -307px; width: 8px; height: 12px; }

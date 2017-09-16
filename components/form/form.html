@@ -12,16 +12,22 @@
   </fieldset>
   <fieldset class="form-group">
     <div class="form-group-title">Цена:
-      <span class="price-controls min">100 руб.-</span>
-      <span class="price-controls max">500 руб.</span>
+      <label class="field-range-controls-price-item">
+        <input class="field-range-controls-price-input" type="number" name="max-price" value="100">
+        <span class="field-range-controls-price-text">руб.</span>
+      </label>
+      <label class="field-range-controls-price-item">
+        <input class="field-range-controls-price-input" type="number" name="min-price" value="500">
+        <span class="field-range-controls-price-text">руб.</span>
+      </label>
     </div>
     <div class="form-group-content">
       <div class="field-range-controls">
-        <div class="range-controls-scale">
-          <div class="range-controls-bar"></div>
+        <div class="field-range-controls-scale">
+          <div class="field-range-controls-bar"></div>
         </div>
-        <div class="range-controls-toggle toggle-min"></div>
-        <div class="range-controls-toggle toggle-max"></div>
+        <div class="field-range-controls-toggle toggle-min"></div>
+        <div class="field-range-controls-toggle toggle-max"></div>
       </div>
     </div>
   </fieldset>

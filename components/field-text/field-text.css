@@ -1,0 +1,15 @@
+.field-text-input {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #d3d3d2;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #999999;
+}
+
+.field-text-input:focus {
+  outline: 0;
+}
