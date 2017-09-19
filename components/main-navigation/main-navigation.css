@@ -28,7 +28,9 @@
   color: #ffffff;
   text-decoration: underline;
   border-radius: 30px;
-  transition: all 0.2s ease;
+  transition: background-color 0.2s ease,
+              color 0.2s ease
+              box-shadow 0.2s ease;
 }
 
 .main-navigation-link.active {
@@ -75,7 +77,7 @@
   line-height: 16px;
   font-weight: 400;
   color: #323232;
-  transition-duration: 0.2s;
+  transition: background-color 0.2s ease;
 }
 
 .main-navigation-submenu-link.active {
