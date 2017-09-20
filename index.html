@@ -51,7 +51,7 @@
           <form class="form-search-field" action="#" method="post">
             <label class="field-text-item">
               <input class="field-text-input" type="search" name="search"  placeholder="Что ищем?">
-              <span class="field-text">поиск</span>
+              <span class="field-text-label">поиск</span>
             </label>
           </form>
         </div>
@@ -59,7 +59,7 @@
           <li class="user-block-item login">
             <a class="user-block-link login" href="#">Вход</a>
             <div class="user-block-login">
-              <form class="login-form" action="index.html" method="post">
+              <form class="user-block-login-form" action="index.html" method="post">
                 <label class="field-text-item">
                   <input class="field-text-input"  type="email" name="email" placeholder="Электронная почта">
                 </label>
@@ -68,9 +68,9 @@
                 </label>
                 <button class="btn" type="submit" name="login">Войти</button>
               </form>
-              <div class="login-help">
-                <a class="login-help-link" href="#">Забыли пароль?</a>
-                <a class="login-help-link" href="#">Новая регистрация</a>
+              <div class="user-block-login-help">
+                <a class="user-block-login-help-link" href="#">Забыли пароль?</a>
+                <a class="user-block-login-help-link" href="#">Новая регистрация</a>
               </div>
             </div>
           </li>
@@ -105,9 +105,9 @@
           </li>
         </ul>
         <div class="schedule-contact">
-          <p class="schedule-contact-field">С 10 до 20 , ежедневно</p>
-          <p class="schedule-contact-field">
-            <a class="schedule-contact-field-link" href="tel: 8 812 450-25-25">8 812 450-25-25</a>
+          <p class="schedule-contact-text">С 10 до 20 , ежедневно</p>
+          <p class="schedule-contact-text">
+            <a class="schedule-contact-text-link" href="tel: 8 812 450-25-25">8 812 450-25-25</a>
           </p>
         </div>
       </header>
@@ -218,23 +218,29 @@
             Магазин Глейси — это онлайн и офлайн
             магазин по продаже мороженого собственного производства на развес
           </h2>
-          <p class="description-text ice-creame">
-            Все наше мороженое изготавливается на собственном производстве,
-            с использованием современного оборудования и проверенных временем технологий.
-          </p>
-          <p class="description-text leaf">
-            Для приготовления мороженого используются настоящие сливки и
-            молоко высочайшего качества. Все дополнительные ингредиенты и
-            добавки произведены из натурального, экологически чистого сырья.
-          </p>
-          <p class="description-text cow">
-            Закупка ингредиентов  производится только у проверенных фермерских
-            хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
-          </p>
-          <p class="description-text termometer">
-            Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,
-            который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
-          </p>
+          <div class="description-content">
+            <div class="description-content-section">
+              <p class="description-content-section-text ice-creame">
+                Все наше мороженое изготавливается на собственном производстве,
+                с использованием современного оборудования и проверенных временем технологий.
+              </p>
+              <p class="description-content-section-text leaf">
+                Для приготовления мороженого используются настоящие сливки и
+                молоко высочайшего качества. Все дополнительные ингредиенты и
+                добавки произведены из натурального, экологически чистого сырья.
+              </p>
+            </div>
+            <div class="description-content-section">
+              <p class="description-content-section-text cow">
+                Закупка ингредиентов  производится только у проверенных фермерских
+                хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
+              </p>
+              <p class="description-content-section-text termometer">
+                Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,
+                который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
+              </p>
+            </div>
+          </div>
         </div>
         <div class="baners-secondary">
           <div class="baner-secondary strawberry">
@@ -266,11 +272,11 @@
           <img class="map-img no-js" src="img/map.jpg" alt="Карта" width="900" height="430">
         </div>
         <div class="address-content-contacts">
-          <div class="address-content-contacts-field">
+          <div class="address-content-contacts-group">
             <b class="address-content-contacts-text light">Адрес главного офиса<br>и офлайн магазина:</b>
             <p class="address-content-contacts-text bold">ул. Б. Конюшенная, д. 19/8, Санкт-Петербург</p>
           </div>
-          <div class="address-content-contacts-field">
+          <div class="address-content-contacts-group">
             <b class="address-content-contacts-text light">Для заказов по телефону:</b>
             <p class="address-content-contacts-text bold">
               <a class="address-content-contacts-link" href="tel:8 812 450 25 25">
