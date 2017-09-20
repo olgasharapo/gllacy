@@ -19,7 +19,7 @@
         <nav class="main-navigation">
           <ul class="main-navigation-list">
             <li class="main-navigation-item">
-              <a class="main-navigation-link" href="#">Каталог</a>
+              <a class="main-navigation-link" href="catalog.html">Каталог</a>
               <ul class="main-navigation-submenu">
                 <li class="main-navigation-submenu-item">
                   <span class="main-navigation-submenu-text">Новинки</span>
@@ -48,10 +48,10 @@
           </ul>
         </nav>
         <div class="form-search">
-          <form class="form" action="#" method="post">
-            <label class="form-text-item">
-              <input class="form-text-input" type="search" name="search"  placeholder="Что ищем?">
-              <span class="form-text-field">поиск</span>
+          <form class="form-search-field" action="#" method="post">
+            <label class="field-text-item">
+              <input class="field-text-input" type="search" name="search"  placeholder="Что ищем?">
+              <span class="field-text">поиск</span>
             </label>
           </form>
         </div>
@@ -104,10 +104,10 @@
             </div>
           </li>
         </ul>
-        <div class="mode-contact">
-          <p class="mode">С 10 до 20 , ежедневно</p>
-          <p class="contact">
-            <a href="tel: 8 812 450-25-25" class="contact-tel">8 812 450-25-25</a>
+        <div class="schedule-contact">
+          <p class="schedule-contact-field">С 10 до 20 , ежедневно</p>
+          <p class="schedule-contact-field">
+            <a class="schedule-contact-field-link" href="tel: 8 812 450-25-25">8 812 450-25-25</a>
           </p>
         </div>
       </header>
@@ -170,7 +170,7 @@
               <p class="catalog-item-text">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
             </div>
             <div class="catalog-item-appearing">
-              <a class="btn">Быстрый просмотр</a>
+              <a class="catalog-item-btn btn">Быстрый просмотр</a>
             </div>
           </article>
           <article class="catalog-item hit">
@@ -183,7 +183,7 @@
               <p class="catalog-item-text">Сливочное-кофейное с кусочками шоколада</p>
             </div>
             <div class="catalog-item-appearing">
-              <a class="btn">Быстрый просмотр</a>
+              <a class="catalog-item-btn btn">Быстрый просмотр</a>
             </div>
           </article>
           <article class="catalog-item hit">
@@ -196,7 +196,7 @@
               <p class="catalog-item-text">Сливочное-клубничное с присыпкой из белого шоколада</p>
             </div>
             <div class="catalog-item-appearing">
-              <a class="btn">Быстрый просмотр</a>
+              <a class="catalog-item-btn btn">Быстрый просмотр</a>
             </div>
           </article>
           <article class="catalog-item hit">
@@ -209,7 +209,7 @@
               <p class="catalog-item-text">Сливочное крем-брюле с карамельной подливкой</p>
             </div>
             <div class="catalog-item-appearing">
-              <a class="btn">Быстрый просмотр</a>
+              <a class="catalog-item-btn btn">Быстрый просмотр</a>
             </div>
           </article>
         </div>
@@ -266,15 +266,19 @@
           <img class="map-img no-js" src="img/map.jpg" alt="Карта" width="900" height="430">
         </div>
         <div class="address-content-contacts">
-          <b class="address-content-contacts-title address-content-contact">Адрес главного офиса<br>и офлайн магазина:</b>
-          <p class="address-content-contacts-text address-tel">ул. Б. Конюшенная, д. 19/8, Санкт-Петербург</p>
-          <b class="address-content-contacts-tel address-content-contact">Для заказов по телефону:</b>
-          <p class="address-content-contacts-tel-link address-tel">
-            <a class="address-content-contacts-link" href="tel:8 812 450 25 25">
-              8 812 450 25 25
-            </a>
-          </p>
-          <p class="address-content-contacts-mode address-content-contact">(С 10 до 20 ежедневно)</p>
+          <div class="address-content-contacts-field">
+            <b class="address-content-contacts-text light">Адрес главного офиса<br>и офлайн магазина:</b>
+            <p class="address-content-contacts-text bold">ул. Б. Конюшенная, д. 19/8, Санкт-Петербург</p>
+          </div>
+          <div class="address-content-contacts-field">
+            <b class="address-content-contacts-text light">Для заказов по телефону:</b>
+            <p class="address-content-contacts-text bold">
+              <a class="address-content-contacts-link" href="tel:8 812 450 25 25">
+                8 812 450 25 25
+              </a>
+            </p>
+            <p class="address-content-contacts-text light">(С 10 до 20 ежедневно)</p>
+          </div>
           <a class="btn popup-btn" href="#" >Форма обратной связи</a>
         </div>
       </div>
@@ -303,7 +307,7 @@
       </section>
       <section class="footer-contact">
         <div class="footer-contact-logo">
-          <img class="footer-contact-logo-img"  src="img/logo-htmlacademy-small.png" alt="htmlacademy" width="108" height="39">
+          <img class="footer-contact-logo-img" src="img/logo-htmlacademy-small.png" alt="htmlacademy" width="108" height="39">
         </div>
         <p class="footer-contact-copyright">Сделано в <a class="footer-contact-copyright-link" href="#"> HTML Academy</a> © 2017</p>
       </section>
