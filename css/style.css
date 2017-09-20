@@ -802,29 +802,26 @@ a {
 .description-content {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.description-content-section {
-  display: flex;
-  flex-direction: column;
-  width: 400px;
-}
-
-.description-content-section-text {
+.description-content-text {
   position: relative;
   width: 400px;
   min-height: 105px;
   line-height: 22px;
   padding-left: 55px;
+}
+
+.description-content-text:nth-child(2n) {
   margin-bottom: 15px;
 }
 
-.description-content-section-text.leaf,
-.description-content-section-text.termometer {
+.description-content-text:last-child {
   margin-bottom: 0;
 }
 
-.description-content-section-text::before {
+.description-content-text::before {
   position: absolute;
   content: "";
   top: -15px;
@@ -834,19 +831,19 @@ a {
   background: url("../img/sprite.png") no-repeat;
 }
 
-.description-content-section-text.ice-creame::before {
+.description-content-text.ice-creame::before {
   background-position: -10px -130px;
 }
 
-.description-content-section-text.leaf::before {
+.description-content-text.leaf::before {
   background-position: -10px -189px;
 }
 
-.description-content-section-text.cow::before {
+.description-content-text.cow::before {
   background-position: -10px -71px;
 }
 
-.description-content-section-text.termometer::before {
+.description-content-text.termometer::before {
   background-position: -10px -248px;
 }
 
